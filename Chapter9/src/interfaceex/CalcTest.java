@@ -5,7 +5,7 @@ public class CalcTest {
 	public static void main(String[] args) {
 		
 		
-		ComplateCalc calc = new ComplateCalc();
+		Calc calc = new ComplateCalc();
 		int n1 =10;
 		int n2 = 2;
 		
@@ -14,7 +14,12 @@ public class CalcTest {
 		System.out.println(calc.times(n1, n2));
 		System.out.println(calc.divide(n1, n2));
 		
-		calc.ShowInfo();
+		calc.description();
+		
+		
+		int[] arr = {1,2,3,4,5};
+		int sum = Calc.total(arr);
+		System.out.println(sum);
 	}
 
 }
