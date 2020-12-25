@@ -21,7 +21,6 @@ class Book implements Cloneable{
 		return super.clone();
 	}
 	
-	
 }
 
 
