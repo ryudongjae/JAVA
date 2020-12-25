@@ -1,6 +1,6 @@
 package object;
 
-class Book{
+class Book implements Cloneable{ 
 	String title;
 	String auther;
 	
@@ -14,12 +14,20 @@ class Book{
 		
 		return auther +"," + title;
 	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
+	}
+	
+	
 }
 
 
 public class ToStringTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CloneNotSupportedException {
 		
 		Book book = new Book("토지","박경리") ;
 		
@@ -29,7 +37,9 @@ public class ToStringTest {
 		System.out.println(str.toString());
 		
 		
+		Book book2  =(Book) book.clone();		
 		
+		System.out.println(book2);
 	}
 
 }
