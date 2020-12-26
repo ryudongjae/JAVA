@@ -9,8 +9,8 @@ public class StringBuilderTest {
 		
 		StringBuilder buffer = new StringBuilder(java);
 		System.out.println(System.identityHashCode(buffer));
-		buffer.append("android");
 		
+		buffer.append("android");
 		System.out.println(System.identityHashCode(buffer));
 		
 		
