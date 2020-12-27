@@ -20,7 +20,7 @@ public class GenericPrinterTest {
 		powderPrinter.printing();
 		plasticPrinter.printing();
 		
-		
+		GenericPrinter printer = new GenericPrinter();
 	}
 
 }
